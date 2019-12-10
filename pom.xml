@@ -19,7 +19,7 @@
         <dependency>
             <groupId>com.github.ude-soco</groupId>
             <artifactId>OpenLAP-DataExchangeFormats</artifactId>
-            <version>v1.0</version>
+            <version>v1.0.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

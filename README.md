@@ -58,7 +58,7 @@ In the following steps we are going to use the Intellij IDEA for developing the 
 * Select `Maven` from the left and click `Next`.
 * Enter the `GroupId`, `ArtifactId` and `Version`, e.g.
 
-	`GroupId`: de.rwthaachen.openlap.analyticsmethods.Samples
+	`GroupId`: com.openlap.analyticsmethods.Samples
 	
 	`ArtifactId`: ItemCounter
 	
@@ -97,7 +97,7 @@ Maven:
 In the project create a class that extends the `AnalyticsMethod` as shown in the example below. The class should be contained in a package within the `src` folder to avoid naming conflicts.
 
 ```java
-package de.rwthaachen.openlap.analyticsmethods.samples;
+package com.openlap.analyticsmethods.samples;
 
 import core.AnalyticsMethod;
 import java.io.InputStream;
