@@ -23,7 +23,6 @@ import java.util.Map;
  *
  * Initial data setup is done by the {@code initialize(OpenLAPDataSet data, OpenLAPPortConfig configuration)}
  * method of this class and uses the given configuration to populate the {@code input}.
- * @author  Oscar Barrios
  */
 
 public abstract class AnalyticsMethod {
@@ -59,6 +58,24 @@ public abstract class AnalyticsMethod {
      * @return a {@code File} handler of the PMML XML. Should be null whenever {@code hasPMML() == true}
      */
     public abstract InputStream getPMMLInputStream();
+
+    /**
+     * Used to get the name of the analytics method
+     * @return The name of the analytics method as a {@code String}
+     */
+    public abstract String getAnalyticsMethodName();
+
+    /**
+     * Used to get the description of the analytics method
+     * @return The description of the analytics method as a {@code String}
+     */
+    public abstract String getAnalyticsMethodDescription();
+
+    /**
+     * Used to get the creator of the analytics method
+     * @return The creator of the analytics method as a {@code String}
+     */
+    public abstract String getAnalyticsMethodCreator();
 
     /**
      * Gets the {@code OpenLAPColumnConfigData} for the {@code input} OpenLAPDataSet.

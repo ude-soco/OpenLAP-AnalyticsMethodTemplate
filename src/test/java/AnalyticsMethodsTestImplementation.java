@@ -54,4 +54,19 @@ public class AnalyticsMethodsTestImplementation extends AnalyticsMethod {
         return getClass().getResourceAsStream(PMML_RESOURCE_PATH);
     }
 
+    @Override
+    public String getAnalyticsMethodName() {
+        return "Sample Analytics Method";
+    }
+
+    @Override
+    public String getAnalyticsMethodDescription() {
+        return "Description of the same analytics method";
+    }
+
+    @Override
+    public String getAnalyticsMethodCreator() {
+        return "OpenLAP";
+    }
+
 }
